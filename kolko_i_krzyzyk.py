@@ -8,7 +8,7 @@ pygame.init()
 SCREEN_WIDTH = 500
 SCREEN_HEIGHT = 500
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption('Gierka')
+pygame.display.set_caption('Kółko i krzyżyk')
 surface = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
 pygame.draw.rect(surface, (222, 224, 224, 200), (0,0,SCREEN_WIDTH, SCREEN_HEIGHT))
 #=============================================================================================#
