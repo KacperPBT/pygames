@@ -212,24 +212,7 @@ while run:
         screen.blit(surface, (0,0))
         if pygame.mouse.get_pressed()[1] == 1:
             state = "menu"
-            panel_button00.clicked_l = False
-            panel_button01.clicked_l = False
-            panel_button02.clicked_l = False
-            panel_button10.clicked_l = False
-            panel_button11.clicked_l = False
-            panel_button12.clicked_l = False
-            panel_button20.clicked_l = False
-            panel_button21.clicked_l = False
-            panel_button22.clicked_l = False
-            panel_button00.clicked_r = False
-            panel_button01.clicked_r = False
-            panel_button02.clicked_r = False
-            panel_button10.clicked_r = False
-            panel_button11.clicked_r = False
-            panel_button12.clicked_r = False
-            panel_button20.clicked_r = False
-            panel_button21.clicked_r = False
-            panel_button22.clicked_r = False
+            panel_button00.clicked_l, panel_button01.clicked_l, panel_button02.clicked_l, panel_button10.clicked_l, panel_button11.clicked_l, panel_button12.clicked_l, panel_button20.clicked_l, panel_button21.clicked_l, panel_button22.clicked_l, panel_button00.clicked_r, panel_button01.clicked_r, panel_button02.clicked_r, panel_button10.clicked_r, panel_button11.clicked_r, panel_button12.clicked_r, panel_button20.clicked_r, panel_button21.clicked_r, panel_button22.clicked_r = False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False
             starting_settings()
 
     for event in pygame.event.get(): # Event handler
