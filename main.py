@@ -41,34 +41,13 @@ panel_button22 = button.Button(304, 304, panel,panel_with_circle,panel_with_cros
 #                                          Game loop                                          #
 
 def starting_settings():
-    global game_blocker
-    game_blocker = False
-    global sleep_blocker
-    sleep_blocker = False
-    global winner
+    global game_blocker, sleep_blocker, winner, state, run, pb00a, pb01a, pb02a, pb10a, pb11a, pb12a, pb20a, pb21a, pb22a
+    pb00a, pb01a, pb02a, pb10a, pb11a, pb12a, pb20a, pb21a, pb22a = 'free', 'free', 'free', 'free', 'free', 'free', 'free', 'free', 'free'
+    game_blocker, sleep_blocker = False, False
     winner = None
-    global state
     state = 'menu'
-    global run
     run = True
-    global pb00a # 1
-    global pb01a # 2
-    global pb02a # 3
-    global pb10a # 4
-    global pb11a # 5
-    global pb12a # 6
-    global pb20a # 7
-    global pb21a # 8
-    global pb22a # 9
-    pb00a = 'free' # 1
-    pb01a = 'free' # 2
-    pb02a = 'free' # 3
-    pb10a = 'free' # 4
-    pb11a = 'free' # 5
-    pb12a = 'free' # 6
-    pb20a = 'free' # 7
-    pb21a = 'free' # 8
-    pb22a = 'free' # 9
+
 
 starting_settings()
 
