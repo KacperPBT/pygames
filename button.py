@@ -78,4 +78,12 @@ class Image_only():
     #                         Check your button state                         #
     def get_state(self) -> str | None:
         return self.__state
+
+    def set_state(self, state):
+        if state == None:
+            self.__state = None
+        if state == 0:
+            self.__state = "left"
+        if state == 1:
+            self.__state = "right"
 #=============================================================================#
