@@ -42,6 +42,8 @@ class Game:
             for j in range(3):
                 mini_button_list.append(button.Image_only((96+i*104, 96+j*104), self.panel, self.panel_with_circle, self.panel_with_cross))
             self.button_list.append(mini_button_list)
+        self.res_text = self.font.render('F5 to reset', True, "grey")
+        self.res_text_rect = self.res_text.get_rect(left = 20,top = 30)
 
     def events(self):
         for event in pygame.event.get():
@@ -92,6 +94,7 @@ class Game:
         for i in range(3):
             for j in range(3):
                 self.button_list[i][j].draw(self.screen)
+        self.screen.blit(self.res_text, self.res_text_rect)
         self.clock.tick(FPS)
         
 
